@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Pay de Manzana</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal"> Pay de Manzana Casero </h1>
+        <p class="subtitulo">Crujiente, dulce y con aroma a canela</p>
+    </header>
+
+    <main id="tarjeta">
+        <article class="receta-item">
+            <img src="img 1.avif" alt="Pay de manzana" class="receta-thumbnail" onclick="mostrarReceta('info-pastel')">
+            <h2>Pay de Manzana</h2>
+            <p class="descripcion">Un postre tradicional, ideal para disfrutar con café o helado.</p>
+            <button class="boton-ver" onclick="mostrarReceta('info-pastel')">Ver receta</button>
+        </article>
+    </main>
+
+    <!-- Modal con la receta completa -->
+    <section id="info-pastel" class="info-receta">
+        <div class="receta-contenido">
+            <button class="boton-cerrar" onclick="cerrarReceta('info-pastel')">&times;</button>
+
+            <div class="contenido-dividido">
+                <div class="receta-texto">
+                    <h1> Pay de Manzana Casero </h1>
+
+                    <h3>Ingredientes</h3>
+                    <ul>
+                        <li>2 tazas de harina de trigo</li>
+                        <li>200 g de mantequilla fría en cubos</li>
+                        <li>1/2 taza de azúcar</li>
+                        <li>1 pizca de sal</li>
+                        <li>1 huevo</li>
+                        <li>5 manzanas grandes (de preferencia verdes)</li>
+                        <li>1/2 taza de azúcar morena</li>
+                        <li>1 cucharadita de canela molida</li>
+                        <li>1 cucharada de harina (para espesar el relleno)</li>
+                        <li>1 huevo batido (para barnizar)</li>
+                    </ul>
+
+                    <h3>Procedimiento</h3>
+                    <ol>
+                        <li><strong>Prepara la masa:</strong> mezcla la harina, azúcar y sal. Agrega la mantequilla fría y trabaja hasta formar una textura arenosa. Añade el huevo y mezcla hasta que la masa se una.</li>
+                        <li>Divide la masa en dos partes, forma discos y refrigera por 30 minutos.</li>
+                        <li><strong>Relleno:</strong> pela y corta las manzanas en láminas delgadas. Mezcla con azúcar morena, canela y harina.</li>
+                        <li>Estira un disco de masa y colócalo en un molde para pay. Rellena con las manzanas.</li>
+                        <li>Estira el otro disco y corta tiras para formar una rejilla sobre el relleno. Barniza con huevo batido.</li>
+                        <li>Hornea a 180°C durante 45-50 minutos o hasta que esté dorado.</li>
+                        <li>Deja enfriar antes de servir. Puedes acompañar con helado de vainilla 🍨.</li>
+                    </ol>
+                </div>
+
+                <div class="receta-imagen">
+                    <img src="img 2.png" alt="Pay de manzana recién horneado">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Recetario Interactivo | Sanchez Zarate Alicia Nahomy</p>
+    </footer>
+
+    <script src="ejecucion.js"></script>
+</body>
+</html>
